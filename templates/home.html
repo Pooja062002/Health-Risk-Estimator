@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>HOME</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/css/login.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Patua+One&family=Poppins:wght@500&family=Roboto+Slab&display=swap" rel="stylesheet">
+<style>
+    body {
+  margin:0;
+        /*background: #d9a7c7;  /* fallback for old browsers */
+/*background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+/*background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url("/static/img/bg.png");
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+    100% {
+        transform: translateX(25%);
+    }
+}
+/* nav
+{
+    display: block;
+    background: #114adb;
+    height: 7rem;
+    top: 0%;
+    /* display: block;
+    margin:0;
+  padding-left: 20px;
+  overflow: hidden; */
+  /* background: #1c92d2;  fallback for old browsers */
+/* background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  Chrome 10-25, Safari 5.1-6 */
+/* background: linear-gradient(to right, #f2fcfe, #1c92d2); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+/* } */ 
+
+/* nav a
+{
+    position: relative;
+    width: 33.333%;
+    display: table-cell;
+    text-align: center;
+    color: #0a0909;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    top: 0%;
+    margin-bottom: 2rem;
+    padding-bottom: 3rem;
+    transition: 0.2s ease color;
+    font-size: 2rem;
+
+} */
+nav{
+    display: flex;
+    top: 0%;
+    bottom: 0%;
+    border-radius: 0rem 0rem 2rem 2rem;
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background: #5CA7EF;
+
+}
+.logo{
+    margin-left: 2rem;
+}
+.navbaritem{
+    margin-left: -3rem;
+}
+.navbaritem ul{
+    position: relative;
+    margin-left: -0.5rem;
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    margin-left: 0rem;
+}
+.navbaritem ul li{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    
+}
+
+
+
+    
+nav img{
+    height: 7rem;
+    width: 7rem;
+}
+
+nav a:before, nav a:after
+{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.2s ease transform;
+}
+
+nav a:before
+{
+    top: 0;
+    left: 10px;
+    width: 6px;
+    height: 6px;
+}
+
+nav a:after
+{
+    top: 5px;
+    left: 18px;
+    width: 4px;
+    height: 4px
+}
+
+nav a:nth-child(1):before
+{
+    background-color: yellow;
+}
+
+nav a:nth-child(1):after
+{
+    background-color: red;
+}
+
+nav a:nth-child(2):before
+{
+    background-color: #00e2ff;
+}
+
+nav a:nth-child(2):after
+{
+    background-color: #89ff00;
+}
+
+nav a:nth-child(3):before
+{
+    background-color: purple;
+}
+
+nav a:nth-child(3):after
+{
+    background-color: palevioletred;
+}
+
+#indicator
+{
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: 0.2s ease left;
+}
+
+nav a:hover
+{
+    color: #fff;
+}
+
+nav a:hover:before, nav a:hover:after
+{
+    transform: scale(1);
+}
+
+nav a:nth-child(1):hover ~ #indicator
+{
+    background: linear-gradient(130deg, yellow, red);
+}
+
+nav a:nth-child(2):hover ~ #indicator
+{
+    left: 34%;
+    background: linear-gradient(130deg, #00e2ff, #89ff00);
+}
+
+nav a:nth-child(3):hover ~ #indicator
+{
+    left: 70%;
+    background: linear-gradient(130deg, purple, palevioletred);
+}
+.navbaritem ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-family: 'Patua One', cursive;
+    
+    padding: 1rem;
+    transition: all 0.2s ease-out;
+}
+.navbaritem ul li a:hover{
+    color: white;
+    
+    background: linear-gradient(140.87deg, #8fa4c7 -29.92%, rgba(3, 103, 166, 0.44) 92.44%);
+    border-radius: 0.5rem;
+    transition: all 2sec ease-in;
+    border: 1px solid rgb(119, 123, 243);
+    /* padding:0.5rem 1rem 0.5rem 1rem; */
+    
+}
+
+
+div.a {
+  margin-top: 110px;
+    margin-left: 50px;
+
+}
+p{font-size: 80px;
+
+}
+.headers{
+    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Poppins', sans-serif; */
+    display: block;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+.subhead{
+    font-size: 3rem;
+    width: 55%;
+    display: block;
+    position: relative;
+    justify-content: center;
+    left: 23%;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    background-color: #5CA7EF;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.main-image{
+    margin-left: -6rem;
+    /* margin-top: 7rem; */
+}
+.main-image img{
+    border-radius: 0.5rem;
+    /* margin-right: 1rem; */
+}
+.content-mid{
+    margin-top: 13rem;
+    display: block;
+    text-align: center;
+    margin-left: -5rem;
+    /* font-size: 1rem; */
+    background: #5CA7EF;
+
+}
+.content-mid h2{
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+
+</style>
+
+
+    <title>Home</title>
+</head>
+<body>
+<!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper)
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    -->
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+<nav>
+    <div class="logo"><a href="#"><img src="/static/img/logo.png" alt="logo" width="110px" height="110px"></a></div>
+    <div class="navbaritem">
+        <ul>
+            <li><a href="{{ url_for('login') }}"><span>LOGIN</span></a></li>
+            <li><a href="{{ url_for('about') }}"><span>ABOUT</span></a> </li>
+            
+        </ul>
+    </div>
+    
+
+  <div id="indicator"></div>
+</nav>
+
+
+<div class="a">
+        <div class="row">
+            <div class="col-md-7 headers">
+                <p>HEALTH RISK <br>ESTIMATOR</p>
+                <p class="subhead">Find the good life by good health</p>
+            </div>
+            <div class="col-md-5 main-image">
+                <img src="/static/img/pic.jpeg" width="550" height="350" style="align-self: center;">
+            </div>
+        </div>
+        <div class="content-mid">
+            <h2>All your Healthcare needs at your finger tips.  An easy and friendly way to know your health.</h2>
+
+        </div>
+</div>
+</body>
+</html>
